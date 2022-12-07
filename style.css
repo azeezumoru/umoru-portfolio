@@ -396,7 +396,7 @@ a {
 }
 
 .contact-box {
-  background-image: url(../img/contact-bg.png);
+  background-image: url(./images/illustration-contact-form.png);
   background-repeat: no-repeat;
   background-position: right;
   background-position-y: 260px;
