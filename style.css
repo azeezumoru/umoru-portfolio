@@ -27,10 +27,25 @@ a {
   display: flex;
   flex-direction: column;
   height: 130vh;
+  align-items: center;
+  padding: 20px;
+}
+
+.mobile-menu {
+  list-style: none;
+  margin: 22px 36px 0 24px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-menu li {
+  display: none;
 }
 
 .navigation {
   margin: 0;
+  width: 100%;
 }
 
 .navigation ul {
@@ -38,7 +53,7 @@ a {
   margin: 0;
   padding: 15px 45px 15px 45px;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .menu-btn {
@@ -66,6 +81,10 @@ a {
   margin-top: 50px;
 }
 
+.b-text-1 h1 {
+  margin: 0;
+}
+
 .b-text-2 {
   color: #36b37e;
   margin-top: 10px;
@@ -73,6 +92,7 @@ a {
 
 .b-text-2 h1 {
   bottom: 25px;
+  margin: 0;
 }
 
 .small-text {
@@ -83,6 +103,10 @@ a {
   line-height: 28px;
   padding: 0 40px 0 40px;
   margin-top: 26px;
+}
+
+.small-text p {
+  margin: 0;
 }
 
 .social-icons {
@@ -285,14 +309,11 @@ a {
   margin: 20px 0 30px 0;
 }
 
-.about-section ul {
-  padding: 0;
-}
-
 .about-card-cont {
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 24px;
+  padding-right: 35px;
 }
 
 .about-card li {
@@ -300,7 +321,6 @@ a {
 }
 
 .about-card {
-  width: 327px;
   border-radius: 8px;
   background-color: #ebf0ee;
   display: flex;
@@ -384,6 +404,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
 }
 
 .contact-text {
@@ -475,4 +496,183 @@ textarea::placeholder {
 .about-content button:active,
 .contact-form-list button:active {
   background-color: #008552;
+}
+
+.work-card:hover {
+  box-shadow: 1px 2px 10px grey;
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #344563;
+  }
+
+  .contact-form-list li {
+    width: 100%;
+  }
+
+  .menu-icon .desktop-menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .menu-icon .mobile-menu {
+    display: none;
+  }
+
+  .hero {
+    background-image: none;
+  }
+
+  .main {
+    background-image: url(./images/Header-llustration-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bold-text {
+    margin-top: 100px;
+  }
+
+  .small-text {
+    margin-top: 24px;
+    padding: 0 200px 0 200px;
+  }
+
+  .work-card-cont {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+
+  .about-content p {
+    padding: 0 180px 0 180px;
+  }
+
+  .about-content {
+    background-image: url(./images/mask\ desk1.png), url(./images/mask\ desk.png);
+    background-position: 100% -22px, 0 68%;
+  }
+
+  .about-card-cont {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 143px;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 320px;
+    font-size: 25px;
+  }
+
+  .contact-section {
+    flex-direction: row;
+    margin: 100px 0;
+    background-image: url(./images/Frame1.png), url(./images/Frame.png), url(./images/illustration\ desktop1.png);
+    background-repeat: no-repeat;
+    background-position: 100% 132px, 0 80%, 300px 75%;
+    height: 66vh;
+  }
+
+  .contact-text {
+    padding: 0 20px 0 80px;
+    font-size: 30px;
+  }
+
+  .contact-box {
+    padding: 0 80px 0 20px;
+    background: none;
+    height: 60vh;
+  }
+
+  .contact-box-bg {
+    background: none;
+  }
+
+  .input-boxes {
+    width: 100%;
+    height: 48px;
+    padding: 0 0 0 15px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .contact-form-list button {
+    padding: 12px 12px;
+  }
+
+  .footer-email {
+    display: none;
+  }
+
+  .footer-icons {
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .social-icons .footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1080px) {
+  .bold-text {
+    margin-top: 186px;
+  }
+
+  .small-text {
+    padding: 0 260px 0 260px;
+  }
+
+  .work-card-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+  }
+
+  .about-card-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .about-content p {
+    width: 50%;
+  }
+
+  .contact-text {
+    padding: 0 20px 0 134px;
+    font-size: 30px;
+  }
+
+  .contact-box {
+    padding: 0 134px 0 20px;
+  }
 }
