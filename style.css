@@ -328,6 +328,7 @@ a {
   align-items: center;
   margin: 30px 0 20px 0;
   border: 1px solid #c1c7d0;
+  transform: scale(1);
 }
 
 .about-card-logo-1 {
@@ -500,6 +501,7 @@ textarea::placeholder {
 
 .work-card:hover {
   box-shadow: 1px 2px 10px grey;
+  transform: scale(0.8);
 }
 
 @media (min-width: 768px) {
